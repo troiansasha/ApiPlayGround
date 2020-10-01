@@ -10,6 +10,7 @@
 
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <aspectj.version>1.8.9</aspectj.version>
@@ -112,7 +113,7 @@
                     <systemProperties>
                         <property>
                             <name>allure.results.directory</name>
-                            <value>${project.build.directory}/allure-results</value>
+                            <value>/Users/sashatroian/IdeaProjects/ApiPlayGround/target/allure-results</value>
                         </property>
                         <property>
                             <name>allure.link.issue.pattern</name>
@@ -147,11 +148,13 @@
 
         </plugins>
     </pluginManagement>
+
+        <resources>
+            <resource>
+                <directory>src/main/java/resources</directory>
+            </resource>
+        </resources>
+
+
     </build>
-
-
-
-
-
-
 </project>
