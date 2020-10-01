@@ -156,22 +156,23 @@ public class FirstApiTest {
         response1.getBody().print();
     }
 //Create User PostRequest
-@Test()
-public void createUser_POST() {
 
-    Map<String, String> data = new HashMap<>();
-    data.put("name", "morpheus");
-    data.put("job", "leader");
-    given()
-//                .contentType("application/json")
-            .body(data)
-            .when()
-            .post("https://reqres.in/api/users").then()
-            .statusCode(201)
-            .body("name", equalTo("morpheus"))
-            .body("job", equalTo("leader"))
-            .body("id", equalTo("885"));
-}
+//@Test()
+//public void createUser_POST() {
+//
+//    Map<String, String> data = new HashMap<>();
+//    data.put("name", "morpheus");
+//    data.put("job", "leader");
+//    given()
+////                .contentType("application/json")
+//            .body(data)
+//            .when()
+//            .post("https://reqres.in/api/users").then()
+//            .statusCode(201)
+//            .body("name", equalTo("morpheus"))
+//            .body("job", equalTo("leader"))
+//            .body("id", equalTo("885"));
+//}
 
 
     }
