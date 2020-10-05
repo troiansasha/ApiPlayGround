@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="FirstApiTest" time="7.023" tests="9" errors="0" skipped="0" failures="1">
+  <properties>
+    <property name="java.specification.version" value="14"/>
+    <property name="sun.jnu.encoding" value="UTF-8"/>
+    <property name="java.class.path" value="/Applications/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds.license:/Applications/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3/boot/plexus-classworlds-2.6.0.jar"/>
+    <property name="java.vm.vendor" value="Oracle Corporation"/>
+    <property name="sun.arch.data.model" value="64"/>
+    <property name="java.vendor.url" value="https://java.oracle.com/"/>
+    <property name="user.timezone" value="Europe/Kiev"/>
+    <property name="maven.conf" value="/Applications/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3/conf"/>
+    <property name="java.vm.specification.version" value="14"/>
+    <property name="os.name" value="Mac OS X"/>
+    <property name="sun.java.launcher" value="SUN_STANDARD"/>
+    <property name="user.country" value="GB"/>
+    <property name="sun.boot.library.path" value="/Library/Java/JavaVirtualMachines/jdk-14.0.1.jdk/Contents/Home/lib"/>
+    <property name="sun.java.command" value="org.codehaus.classworlds.Launcher -Didea.version2020.1.4 clean test -Dtest=FirstApiTest allure:report -Dmaven.test.failure.ignore=true"/>
+    <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="jdk.debug" value="release"/>
+    <property name="maven.home" value="/Applications/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3"/>
+    <property name="test" value="FirstApiTest"/>
+    <property name="sun.cpu.endian" value="little"/>
+    <property name="user.home" value="/Users/sashatroian"/>
+    <property name="user.language" value="en"/>
+    <property name="java.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.version.date" value="2020-04-14"/>
+    <property name="java.home" value="/Library/Java/JavaVirtualMachines/jdk-14.0.1.jdk/Contents/Home"/>
+    <property name="file.separator" value="/"/>
+    <property name="java.vm.compressedOopsMode" value="Zero based"/>
+    <property name="line.separator" value="&#10;"/>
+    <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
+    <property name="java.specification.name" value="Java Platform API Specification"/>
+    <property name="idea.version2020.1.4" value="true"/>
+    <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
+    <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.runtime.version" value="14.0.1+7"/>
+    <property name="user.name" value="sashatroian"/>
+    <property name="path.separator" value=":"/>
+    <property name="os.version" value="10.15.6"/>
+    <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
+    <property name="file.encoding" value="UTF-8"/>
+    <property name="guice.disable.misplaced.annotation.check" value="true"/>
+    <property name="java.vm.name" value="Java HotSpot(TM) 64-Bit Server VM"/>
+    <property name="maven.ext.class.path" value="/Applications/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven-event-listener.jar"/>
+    <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
+    <property name="java.io.tmpdir" value="/var/folders/42/hx1t0xzn02l2t73069l2fj1w0000gn/T/"/>
+    <property name="java.version" value="14.0.1"/>
+    <property name="user.dir" value="/Users/sashatroian/IdeaProjects/ApiPlayGround"/>
+    <property name="os.arch" value="x86_64"/>
+    <property name="maven.multiModuleProjectDirectory" value="/Users/sashatroian/IdeaProjects/ApiPlayGround"/>
+    <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
+    <property name="java.library.path" value="/Users/sashatroian/Library/Java/Extensions:/Library/Java/Extensions:/Network/Library/Java/Extensions:/System/Library/Java/Extensions:/usr/lib/java:."/>
+    <property name="java.vm.info" value="mixed mode, sharing"/>
+    <property name="java.vendor" value="Oracle Corporation"/>
+    <property name="java.vm.version" value="14.0.1+7"/>
+    <property name="classworlds.conf" value="/Applications/IntelliJ IDEA CE.app/Contents/plugins/maven/lib/maven3/bin/m2.conf"/>
+    <property name="sun.io.unicode.encoding" value="UnicodeBig"/>
+    <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
+    <property name="java.class.version" value="58.0"/>
+    <property name="maven.test.failure.ignore" value="true"/>
+  </properties>
+  <testcase name="listOfUsers_GET" classname="FirstApiTest" time="2.345"/>
+  <testcase name="registerUser_POST" classname="FirstApiTest" time="0.329"/>
+  <testcase name="testGet" classname="FirstApiTest" time="0.339"/>
+  <testcase name="testPOST" classname="FirstApiTest" time="0.374"/>
+  <testcase name="testPrivat_id1_GET" classname="FirstApiTest" time="1.121"/>
+  <testcase name="testPrivat_id5_GET" classname="FirstApiTest" time="0.548"/>
+  <testcase name="testWeatherLondon2_GET" classname="FirstApiTest" time="0.24">
+    <failure message="1 expectation failed.&#10;JSON path weather.id[0] doesn&apos;t match.&#10;Expected: &lt;501&gt;&#10;  Actual: 500&#10;" type="java.lang.AssertionError"><![CDATA[java.lang.AssertionError: 
+1 expectation failed.
+JSON path weather.id[0] doesn't match.
+Expected: <501>
+  Actual: 500
+
+	at FirstApiTest.testWeatherLondon2_GET(FirstApiTest.java:84)
+]]></failure>
+    <system-out><![CDATA[Request method:	GET
+Request URI:	http://api.openweathermap.org/data/2.5/weather?q=London&appid=3f100ad70d16bc8fc6b5cbd43eacdb08
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Server: openresty
+Date: Fri, 02 Oct 2020 10:16:31 GMT
+Content-Type: application/json; charset=utf-8
+Content-Length: 484
+Connection: keep-alive
+X-Cache-Key: /data/2.5/weather?q=london
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Credentials: true
+Access-Control-Allow-Methods: GET, POST
+
+{
+    "coord": {
+        "lon": -0.13,
+        "lat": 51.51
+    },
+    "weather": [
+        {
+            "id": 500,
+            "main": "Rain",
+            "description": "light rain",
+            "icon": "10d"
+        }
+    ],
+    "base": "stations",
+    "main": {
+        "temp": 285.09,
+        "feels_like": 279.66,
+        "temp_min": 284.26,
+        "temp_max": 285.37,
+        "pressure": 988,
+        "humidity": 82
+    },
+    "visibility": 10000,
+    "wind": {
+        "speed": 7.43,
+        "deg": 90
+    },
+    "rain": {
+        "1h": 0.75
+    },
+    "clouds": {
+        "all": 100
+    },
+    "dt": 1601633239,
+    "sys": {
+        "type": 3,
+        "id": 268730,
+        "country": "GB",
+        "sunrise": 1601618593,
+        "sunset": 1601660167
+    },
+    "timezone": 3600,
+    "id": 2643743,
+    "name": "London",
+    "cod": 200
+}
+]]></system-out>
+  </testcase>
+  <testcase name="testWeatherLondon_GET" classname="FirstApiTest" time="0.247"/>
+  <testcase name="userError_GET" classname="FirstApiTest" time="0.571"/>
+</testsuite>
