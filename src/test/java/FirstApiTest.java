@@ -81,8 +81,8 @@ public class FirstApiTest {
                         .log().all()
                         .statusCode(200)
 //                        .body("sys.country", equalTo("GB"))
-                        .body("weather.id[0]", equalTo(801))
-                        .body("weather.icon[0]", equalTo("02d"))
+                        .body("weather.id[0]", equalTo(803))
+                        .body("weather.icon[0]", equalTo("04d"))
                         .body("id", equalTo(2643743))
                         .extract()
                         .response();

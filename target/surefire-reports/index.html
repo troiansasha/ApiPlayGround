@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Surefire_suite" class="navigator-link">
-              <span class="suite-name border-failed">Surefire suite</span>
+              <span class="suite-name border-passed">Surefire suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -91,21 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">9 methods, 1 failed,   8 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-Surefire_suite" class="hide-methods failed suite-Surefire_suite"> (hide)</a> <!-- hide-methods failed suite-Surefire_suite -->
-                      <a href="#" panel-name="suite-Surefire_suite" class="show-methods failed suite-Surefire_suite"> (show)</a> <!-- show-methods failed suite-Surefire_suite -->
-                    </span>
-                    <div class="method-list-content failed suite-Surefire_suite">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="FirstApiTest" class="method navigator-link" hash-for-method="testWeatherLondon2_GET">testWeatherLondon2_GET</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-Surefire_suite -->
+                    <span class="method-stats">14 methods,   14 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -116,7 +102,27 @@
                     <div class="method-list-content passed suite-Surefire_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="FirstApiTest" class="method navigator-link" hash-for-method="LoginSuccesfull_POST">LoginSuccesfull_POST</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="FirstApiTest" class="method navigator-link" hash-for-method="createUser_POST">createUser_POST</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="FirstApiTest" class="method navigator-link" hash-for-method="deleteUser_PUT">deleteUser_PUT</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="FirstApiTest" class="method navigator-link" hash-for-method="listOfUsers_GET">listOfUsers_GET</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="FirstApiTest" class="method navigator-link" hash-for-method="registerUserUnsuccesfull_POST">registerUserUnsuccesfull_POST</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -146,7 +152,17 @@
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="FirstApiTest" class="method navigator-link" hash-for-method="testWeatherLondon2_GET">testWeatherLondon2_GET</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="FirstApiTest" class="method navigator-link" hash-for-method="testWeatherLondon_GET">testWeatherLondon_GET</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="FirstApiTest" class="method navigator-link" hash-for-method="updateUser_PUT">updateUser_PUT</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -166,43 +182,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Surefire_suite" class="panel Surefire_suite">
-          <div class="suite-Surefire_suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">FirstApiTest</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="testWeatherLondon2_GET">
-                  </a> <!-- testWeatherLondon2_GET -->
-                  <span class="method-name">testWeatherLondon2_GET</span>
-                  <div class="stack-trace">java.lang.AssertionError: 1 expectation failed.
-JSON path weather.id[0] doesn&apos;t match.
-Expected: &lt;501&gt;
-  Actual: 500
-
-	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrap.callConstructor(ConstructorSite.java:84)
-	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:60)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:235)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:247)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:483)
-	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.validateResponseIfRequired(ResponseSpecificationImpl.groovy:655)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite$PogoCachedMethodSiteNoUnwrapNoCoerce.invoke(PogoMetaMethodSite.java:210)
-	at org.codehaus.groovy.runtime.callsite.PogoMetaMethodSite.callCurrent(PogoMetaMethodSite.java:59)
-	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callCurrent(AbstractCallSite.java:166)
-	at io.restassured.internal.ResponseSpecificationImpl.content(ResponseSpecificationImpl.groovy:275)
-	at io.restassured.specification.ResponseSpecification$content$1.callCurrent(Unknown Source)
-	at io.restassured.internal.ResponseSpecificationImpl.body(ResponseSpecificationImpl.groovy:258)
-	at io.restassured.internal.ValidatableResponseOptionsImpl.body(ValidatableResponseOptionsImpl.java:274)
-	at FirstApiTest.testWeatherLondon2_GET(FirstApiTest.java:84)
-... Removed 39 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Surefire_suite-class-failed -->
           <div class="suite-Surefire_suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -211,9 +190,37 @@ Expected: &lt;501&gt;
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="LoginSuccesfull_POST">
+                  </a> <!-- LoginSuccesfull_POST -->
+                  <span class="method-name">LoginSuccesfull_POST</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="createUser_POST">
+                  </a> <!-- createUser_POST -->
+                  <span class="method-name">createUser_POST</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="deleteUser_PUT">
+                  </a> <!-- deleteUser_PUT -->
+                  <span class="method-name">deleteUser_PUT</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="listOfUsers_GET">
                   </a> <!-- listOfUsers_GET -->
                   <span class="method-name">listOfUsers_GET</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="registerUserUnsuccesfull_POST">
+                  </a> <!-- registerUserUnsuccesfull_POST -->
+                  <span class="method-name">registerUserUnsuccesfull_POST</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -253,9 +260,23 @@ Expected: &lt;501&gt;
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
+                  <a name="testWeatherLondon2_GET">
+                  </a> <!-- testWeatherLondon2_GET -->
+                  <span class="method-name">testWeatherLondon2_GET</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="testWeatherLondon_GET">
                   </a> <!-- testWeatherLondon_GET -->
                   <span class="method-name">testWeatherLondon_GET</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="updateUser_PUT">
+                  </a> <!-- updateUser_PUT -->
+                  <span class="method-name">updateUser_PUT</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -318,48 +339,68 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(9);
+data.addRows(14);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'listOfUsers_GET')
+data.setCell(0, 1, 'LoginSuccesfull_POST')
 data.setCell(0, 2, 'FirstApiTest')
-data.setCell(0, 3, 2343);
+data.setCell(0, 3, 3264);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testPrivat_id1_GET')
+data.setCell(1, 1, 'testPrivat_id5_GET')
 data.setCell(1, 2, 'FirstApiTest')
-data.setCell(1, 3, 1120);
+data.setCell(1, 3, 569);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'userError_GET')
+data.setCell(2, 1, 'testPrivat_id1_GET')
 data.setCell(2, 2, 'FirstApiTest')
-data.setCell(2, 3, 548);
+data.setCell(2, 3, 529);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'testPrivat_id5_GET')
+data.setCell(3, 1, 'listOfUsers_GET')
 data.setCell(3, 2, 'FirstApiTest')
-data.setCell(3, 3, 547);
+data.setCell(3, 3, 383);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'testPOST')
 data.setCell(4, 2, 'FirstApiTest')
-data.setCell(4, 3, 374);
+data.setCell(4, 3, 363);
 data.setCell(5, 0, 5)
 data.setCell(5, 1, 'testGet')
 data.setCell(5, 2, 'FirstApiTest')
-data.setCell(5, 3, 338);
+data.setCell(5, 3, 324);
 data.setCell(6, 0, 6)
-data.setCell(6, 1, 'registerUser_POST')
+data.setCell(6, 1, 'userError_GET')
 data.setCell(6, 2, 'FirstApiTest')
-data.setCell(6, 3, 329);
+data.setCell(6, 3, 292);
 data.setCell(7, 0, 7)
-data.setCell(7, 1, 'testWeatherLondon_GET')
+data.setCell(7, 1, 'createUser_POST')
 data.setCell(7, 2, 'FirstApiTest')
-data.setCell(7, 3, 246);
+data.setCell(7, 3, 254);
 data.setCell(8, 0, 8)
-data.setCell(8, 1, 'testWeatherLondon2_GET')
+data.setCell(8, 1, 'registerUser_POST')
 data.setCell(8, 2, 'FirstApiTest')
-data.setCell(8, 3, 216);
+data.setCell(8, 3, 235);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'registerUserUnsuccesfull_POST')
+data.setCell(9, 2, 'FirstApiTest')
+data.setCell(9, 3, 218);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'deleteUser_PUT')
+data.setCell(10, 2, 'FirstApiTest')
+data.setCell(10, 3, 212);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'updateUser_PUT')
+data.setCell(11, 2, 'FirstApiTest')
+data.setCell(11, 3, 200);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testWeatherLondon_GET')
+data.setCell(12, 2, 'FirstApiTest')
+data.setCell(12, 3, 159);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testWeatherLondon2_GET')
+data.setCell(13, 2, 'FirstApiTest')
+data.setCell(13, 3, 157);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 7 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -387,42 +428,60 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">FirstApiTest</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <span class="method-name">listOfUsers_GET</span>
+                <span class="method-name">LoginSuccesfull_POST</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
+                <span class="method-name">createUser_POST</span>
+                <span class="method-start">3342 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">deleteUser_PUT</span>
+                <span class="method-start">3605 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">listOfUsers_GET</span>
+                <span class="method-start">3817 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">registerUserUnsuccesfull_POST</span>
+                <span class="method-start">4202 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
                 <span class="method-name">registerUser_POST</span>
-                <span class="method-start">2426 ms</span>
+                <span class="method-start">4421 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testGet</span>
-                <span class="method-start">2782 ms</span>
+                <span class="method-start">4657 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testPOST</span>
-                <span class="method-start">3121 ms</span>
+                <span class="method-start">4982 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testPrivat_id1_GET</span>
-                <span class="method-start">3496 ms</span>
+                <span class="method-start">5345 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testPrivat_id5_GET</span>
-                <span class="method-start">4617 ms</span>
+                <span class="method-start">5875 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">testWeatherLondon2_GET</span>
-                <span class="method-start">5165 ms</span>
+                <span class="method-start">6445 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testWeatherLondon_GET</span>
-                <span class="method-start">5407 ms</span>
+                <span class="method-start">6603 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">updateUser_PUT</span>
+                <span class="method-start">6763 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">userError_GET</span>
-                <span class="method-start">5654 ms</span>
+                <span class="method-start">6964 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

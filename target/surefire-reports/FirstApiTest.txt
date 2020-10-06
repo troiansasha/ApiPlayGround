@@ -1,13 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: FirstApiTest
 -------------------------------------------------------------------------------
-Tests run: 9, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 7.023 s <<< FAILURE! - in FirstApiTest
-testWeatherLondon2_GET(FirstApiTest)  Time elapsed: 0.24 s  <<< FAILURE!
-java.lang.AssertionError: 
-1 expectation failed.
-JSON path weather.id[0] doesn't match.
-Expected: <501>
-  Actual: 500
-
-	at FirstApiTest.testWeatherLondon2_GET(FirstApiTest.java:84)
-
+Tests run: 14, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 8.123 s - in FirstApiTest
